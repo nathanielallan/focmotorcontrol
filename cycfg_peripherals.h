@@ -31,7 +31,6 @@
 
 #include "cycfg_notices.h"
 #include "xmc_ccu8.h"
-#include "xmc_vadc.h"
 
 #if defined(__cplusplus)
 extern "C" {
@@ -40,16 +39,6 @@ extern "C" {
 #define ccu8_0_ENABLED 1U
 #define ccu8_0_NUM 0U
 #define ccu8_0_HW CCU80
-#define vadc_0_ENABLED 1U
-#define vadc_0_HW VADC
-#define vadc_0_SR0_INTERRUPT_HANDLER VADC0_C0_0_IRQHandler
-#define vadc_0_SR1_INTERRUPT_HANDLER VADC0_C0_1_IRQHandler
-#define vadc_0_SR2_INTERRUPT_HANDLER VADC0_C0_2_IRQHandler
-#define vadc_0_SR3_INTERRUPT_HANDLER VADC0_C0_3_IRQHandler
-#define vadc_0_SR0_IRQN VADC0_C0_0_IRQn
-#define vadc_0_SR1_IRQN VADC0_C0_1_IRQn
-#define vadc_0_SR2_IRQN VADC0_C0_2_IRQn
-#define vadc_0_SR3_IRQN VADC0_C0_3_IRQn
 #define ccu8_0_ch_0_ENABLED 1U
 #define ccu8_0_ch_0_NUM 0U
 #define ccu8_0_ch_0_HW CCU80_CC80
@@ -62,26 +51,7 @@ extern "C" {
 #define ccu8_0_ch_2_NUM 2U
 #define ccu8_0_ch_2_HW CCU80_CC82
 #define ccu8_0_ch_2_TICK_NS 42U
-#define vadc_0_group_0_ENABLED 1U
-#define vadc_0_group_0_HW VADC_G0
-#define vadc_0_group_0_NUM 0U
-#define vadc_0_group_0_SR0_INTERRUPT_HANDLER VADC0_G0_0_IRQHandler
-#define vadc_0_group_0_SR1_INTERRUPT_HANDLER VADC0_G0_1_IRQHandler
-#define vadc_0_group_0_SR2_INTERRUPT_HANDLER VADC0_G0_2_IRQHandler
-#define vadc_0_group_0_SR3_INTERRUPT_HANDLER VADC0_G0_3_IRQHandler
-#define vadc_0_group_0_SR0_IRQN VADC0_G0_0_IRQn
-#define vadc_0_group_0_SR1_IRQN VADC0_G0_1_IRQn
-#define vadc_0_group_0_SR2_IRQN VADC0_G0_2_IRQn
-#define vadc_0_group_0_SR3_IRQN VADC0_G0_3_IRQn
-#define vadc_0_group_0_ch_3_ENABLED 1U
-#define vadc_0_group_0_ch_4_ENABLED 1U
-#define vadc_0_group_0_ch_5_ENABLED 1U
-#define vadc_0_group_0_ch_6_ENABLED 1U
-#define vadc_0_group_0_ch_7_ENABLED 1U
 
-extern XMC_VADC_GROUP_CONFIG_t vadc_0_group0_init_config;
-extern const XMC_VADC_GLOBAL_CONFIG_t vadc_0_config;
-extern const XMC_VADC_BACKGROUND_CONFIG_t vadc_0_background_scan_config;
 extern const XMC_CCU8_SLICE_COMPARE_CONFIG_t ccu8_0_ch_0_compare_config;
 extern const XMC_CCU8_SLICE_DEAD_TIME_CONFIG_t ccu8_0_ch_0_dead_time_config;
 extern const XMC_CCU8_SLICE_EVENT_CONFIG_t ccu8_0_ch_0_event0_config;
@@ -97,24 +67,6 @@ extern const XMC_CCU8_SLICE_DEAD_TIME_CONFIG_t ccu8_0_ch_2_dead_time_config;
 extern const XMC_CCU8_SLICE_EVENT_CONFIG_t ccu8_0_ch_2_event0_config;
 extern const XMC_CCU8_SLICE_EVENT_CONFIG_t ccu8_0_ch_2_event1_config;
 extern const XMC_CCU8_SLICE_EVENT_CONFIG_t ccu8_0_ch_2_event2_config;
-extern const XMC_VADC_QUEUE_ENTRY_t vadc_0_group_0_queue_entries_3;
-extern const XMC_VADC_QUEUE_ENTRY_t vadc_0_group_0_queue_entries_4;
-extern const XMC_VADC_QUEUE_ENTRY_t vadc_0_group_0_queue_entries_5;
-extern const XMC_VADC_QUEUE_ENTRY_t vadc_0_group_0_queue_entries_6;
-extern const XMC_VADC_QUEUE_ENTRY_t vadc_0_group_0_queue_entries_7;
-extern const XMC_VADC_RESULT_CONFIG_t vadc_0_group_0_result_3_config;
-extern const XMC_VADC_RESULT_CONFIG_t vadc_0_group_0_result_4_config;
-extern const XMC_VADC_RESULT_CONFIG_t vadc_0_group_0_result_5_config;
-extern const XMC_VADC_RESULT_CONFIG_t vadc_0_group_0_result_6_config;
-extern const XMC_VADC_RESULT_CONFIG_t vadc_0_group_0_result_7_config;
-extern const XMC_VADC_QUEUE_CONFIG_t vadc_0_group_0_queue_config;
-extern const XMC_VADC_GROUP_CLASS_t vadc_0_0_iclass_0;
-extern const XMC_VADC_GROUP_CLASS_t vadc_0_0_iclass_1;
-extern const XMC_VADC_CHANNEL_CONFIG_t vadc_0_group_0_ch_3_config;
-extern const XMC_VADC_CHANNEL_CONFIG_t vadc_0_group_0_ch_4_config;
-extern const XMC_VADC_CHANNEL_CONFIG_t vadc_0_group_0_ch_5_config;
-extern const XMC_VADC_CHANNEL_CONFIG_t vadc_0_group_0_ch_6_config;
-extern const XMC_VADC_CHANNEL_CONFIG_t vadc_0_group_0_ch_7_config;
 
 void init_cycfg_peripherals(void);
 
