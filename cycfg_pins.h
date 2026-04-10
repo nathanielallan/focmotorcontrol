@@ -103,61 +103,6 @@ extern "C" {
 #ifndef ioss_0_port_0_pin_5_HWO
     #define ioss_0_port_0_pin_5_HWO XMC_GPIO_HWCTRL_DISABLED
 #endif
-#define ioss_0_port_14_pin_3_ENABLED 1U
-#define ioss_0_port_14_pin_3_PORT XMC_GPIO_PORT14
-#define ioss_0_port_14_pin_3_PORT_NUM 14U
-#define ioss_0_port_14_pin_3_PIN 3U
-#ifndef ioss_0_port_14_pin_3_ALT
-    #define ioss_0_port_14_pin_3_ALT 0U
-#endif
-#define ioss_0_port_14_pin_3_MODE (XMC_GPIO_MODE_OUTPUT_PUSH_PULL | ioss_0_port_14_pin_3_ALT)
-#ifndef ioss_0_port_14_pin_3_HWO
-    #define ioss_0_port_14_pin_3_HWO XMC_GPIO_HWCTRL_DISABLED
-#endif
-#define ioss_0_port_14_pin_4_ENABLED 1U
-#define ioss_0_port_14_pin_4_PORT XMC_GPIO_PORT14
-#define ioss_0_port_14_pin_4_PORT_NUM 14U
-#define ioss_0_port_14_pin_4_PIN 4U
-#ifndef ioss_0_port_14_pin_4_ALT
-    #define ioss_0_port_14_pin_4_ALT 0U
-#endif
-#define ioss_0_port_14_pin_4_MODE (XMC_GPIO_MODE_OUTPUT_PUSH_PULL | ioss_0_port_14_pin_4_ALT)
-#ifndef ioss_0_port_14_pin_4_HWO
-    #define ioss_0_port_14_pin_4_HWO XMC_GPIO_HWCTRL_DISABLED
-#endif
-#define ioss_0_port_14_pin_5_ENABLED 1U
-#define ioss_0_port_14_pin_5_PORT XMC_GPIO_PORT14
-#define ioss_0_port_14_pin_5_PORT_NUM 14U
-#define ioss_0_port_14_pin_5_PIN 5U
-#ifndef ioss_0_port_14_pin_5_ALT
-    #define ioss_0_port_14_pin_5_ALT 0U
-#endif
-#define ioss_0_port_14_pin_5_MODE (XMC_GPIO_MODE_OUTPUT_PUSH_PULL | ioss_0_port_14_pin_5_ALT)
-#ifndef ioss_0_port_14_pin_5_HWO
-    #define ioss_0_port_14_pin_5_HWO XMC_GPIO_HWCTRL_DISABLED
-#endif
-#define ioss_0_port_14_pin_6_ENABLED 1U
-#define ioss_0_port_14_pin_6_PORT XMC_GPIO_PORT14
-#define ioss_0_port_14_pin_6_PORT_NUM 14U
-#define ioss_0_port_14_pin_6_PIN 6U
-#ifndef ioss_0_port_14_pin_6_ALT
-    #define ioss_0_port_14_pin_6_ALT 0U
-#endif
-#define ioss_0_port_14_pin_6_MODE (XMC_GPIO_MODE_OUTPUT_PUSH_PULL | ioss_0_port_14_pin_6_ALT)
-#ifndef ioss_0_port_14_pin_6_HWO
-    #define ioss_0_port_14_pin_6_HWO XMC_GPIO_HWCTRL_DISABLED
-#endif
-#define ioss_0_port_14_pin_7_ENABLED 1U
-#define ioss_0_port_14_pin_7_PORT XMC_GPIO_PORT14
-#define ioss_0_port_14_pin_7_PORT_NUM 14U
-#define ioss_0_port_14_pin_7_PIN 7U
-#ifndef ioss_0_port_14_pin_7_ALT
-    #define ioss_0_port_14_pin_7_ALT 0U
-#endif
-#define ioss_0_port_14_pin_7_MODE (XMC_GPIO_MODE_OUTPUT_PUSH_PULL | ioss_0_port_14_pin_7_ALT)
-#ifndef ioss_0_port_14_pin_7_HWO
-    #define ioss_0_port_14_pin_7_HWO XMC_GPIO_HWCTRL_DISABLED
-#endif
 
 extern const XMC_GPIO_CONFIG_t ioss_0_port_0_pin_0_config;
 extern const XMC_GPIO_CONFIG_t ioss_0_port_0_pin_1_config;
@@ -165,11 +110,6 @@ extern const XMC_GPIO_CONFIG_t ioss_0_port_0_pin_2_config;
 extern const XMC_GPIO_CONFIG_t ioss_0_port_0_pin_3_config;
 extern const XMC_GPIO_CONFIG_t ioss_0_port_0_pin_4_config;
 extern const XMC_GPIO_CONFIG_t ioss_0_port_0_pin_5_config;
-extern const XMC_GPIO_CONFIG_t ioss_0_port_14_pin_3_config;
-extern const XMC_GPIO_CONFIG_t ioss_0_port_14_pin_4_config;
-extern const XMC_GPIO_CONFIG_t ioss_0_port_14_pin_5_config;
-extern const XMC_GPIO_CONFIG_t ioss_0_port_14_pin_6_config;
-extern const XMC_GPIO_CONFIG_t ioss_0_port_14_pin_7_config;
 
 void init_cycfg_pins(void);
 
